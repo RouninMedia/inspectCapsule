@@ -8,14 +8,48 @@ whether _Active_ or _Inactive_ on the current page.
 
 ______
 
+## Example Queries
+
+```php
+inspectCapsule('<Ashiva_Menu (Ashiva) [#]>');
+inspectCapsule('<SB_Company_Details (Scotia_Beauty) [#]>');
+
+// INSPECTS STATIC CAPSULE CELL AT /ashiva/ashiva-menu/code/markup/button/ashiva-menu-button--html.json
+inspectCapsule('<Ashiva_Menu (Ashiva) [@]Button___Ashiva_Menu_Button>');
+inspectCapsule('<Ashiva_Menu (Ashiva) [@]Button___Ashiva_Menu_Button__HTML>');
+inspectCapsule('<Ashiva_Menu (Ashiva) [@]Markup="Button___Ashiva_Menu_Button">');
+inspectCapsule('<Ashiva_Menu (Ashiva) [@]Markup="Button___Ashiva_Menu_Button__HTML">');
+inspectCapsule('<Ashiva_Menu (Ashiva) [@]Markup="button/ashiva-Menu-button">');
+inspectCapsule('<Ashiva_Menu (Ashiva) [@]Markup="button/ashiva-Menu-button--html">');
+
+// INSPECTS STATIC CAPSULE CELL AT /scotia-beauty/sb-company-details/code/styles/sb-company-details--css.json
+inspectCapsule('<SB_Company_Details (Scotia_Beauty) [@]Styles>');
+inspectCapsule('<SB_Company_Details (Scotia_Beauty) [@]SB_Company_Details__CSS>');
+inspectCapsule('<SB_Company_Details (Scotia_Beauty) [@]Styles="SB_Company_Details">');
+inspectCapsule('<SB_Company_Details (Scotia_Beauty) [@]Styles="SB_Company_Details__CSS">');
+
+// INSPECTS DYNAMIC CAPSULE CELL AT /scotia-beauty/sb-company-details/code/markup/sb-company-details--php.php
+inspectCapsule('<SB_Company_Details (Scotia_Beauty) [@]Markup="SB_Company_Details__PHP">');
+```
+
+______
+
+## inspectCapsule Functions
+
+
+### `getDocumentType()`
+
 ```php
 
 function getDocumentType() {
 
   return (strpos(highlight_file(__FILE__, TRUE), '&lt;!DOCTYPE&nbsp;html&gt;') !== FALSE) ? 'HTML5' : 'Unknown';
 }
+```
 
+### `inspectCapsule()` 
 
+```php
 function inspectCapsule($InspectionRequest) {
 
   $CellReference = $InspectionRequest;
