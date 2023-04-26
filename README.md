@@ -1,10 +1,10 @@
 # inspectCapsule()
-A PHP function for inspecting:
+`inspectCapsule()` is a PHP function for inspecting:
 
- - entire **Danis³h Capsules**; and
- - individual **Danis³h Capsule Cells**
+ - an entire **Danis³h Capsule**; and
+ - an individual **Danis³h Capsule Cell**
  
-whether _Active_ or _Inactive_ on the current page.
+whether the Danis3h Capsule in question is _Active_ or _Inactive_ on the current page.
 
 ______
 
