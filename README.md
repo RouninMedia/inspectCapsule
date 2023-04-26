@@ -1,4 +1,4 @@
-# inspectCapsule
+# inspectCapsule()
 A PHP function for inspecting:
 
  - entire **Danis³h Capsules**; and
