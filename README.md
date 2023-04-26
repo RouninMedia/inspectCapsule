@@ -9,6 +9,7 @@ whether _Active_ or _Inactive_ on the current page.
 ______
 
 ```php
+
 function getDocumentType() {
 
   return (strpos(highlight_file(__FILE__, TRUE), '&lt;!DOCTYPE&nbsp;html&gt;') !== FALSE) ? 'HTML5' : 'Unknown';
