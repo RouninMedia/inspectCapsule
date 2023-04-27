@@ -11,7 +11,10 @@ ______
 ## Example Queries
 
 ```php
+// INSPECTS ENTIRE CAPSULE AT /ashiva/ashiva-menu/
 inspectCapsule('<Ashiva_Menu (Ashiva) [#]>');
+
+// INSPECTS ENTIRE CAPSULE AT /scotia-beauty/sb-company-details/
 inspectCapsule('<SB_Company_Details (Scotia_Beauty) [#]>');
 
 // INSPECTS STATIC CAPSULE CELL AT /ashiva/ashiva-menu/code/markup/button/ashiva-menu-button--html.json
